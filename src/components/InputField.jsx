@@ -9,10 +9,11 @@ const Wrapper = styled("div")({
 });
 
 const Label = styled("p")({
-  color: "#b9bbbbe",
+  color: "#96989d",
   textTransform: "uppercase",
-  fontWeight: "600",
+  fontWeight: "800",
   fontSize: "16px",
+  fontFamily:`'Roboto', sans-serif`,
 });
 
 const Input = styled("input")({

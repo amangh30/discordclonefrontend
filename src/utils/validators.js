@@ -14,7 +14,7 @@ export const validateRegisterForm = ({ email, password, username }) => {
 };
 
 export const validatePassword = (password) => {
-  return password.length > 5 && password.length < 13;
+  return password.length >= 8 && password.length < 13;
 };
 
 export const validateEmail = (mail) => {

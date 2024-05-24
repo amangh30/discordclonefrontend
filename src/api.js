@@ -4,7 +4,7 @@ import { logout } from "./utils";
 
 const apiClient = axios.create({
   baseURL: process.env.REACT_APP_API,
-  timeout: 1000,
+  timeout: 1200,
 });
 
 apiClient.interceptors.request.use(
@@ -27,6 +27,7 @@ export const register = async (data) => {
   try {
     return await apiClient.post(`/api/v1/auth/register`, data);
   } catch (exception) {
+    console.log(exception)
     return {
       error: true,
       exception,
