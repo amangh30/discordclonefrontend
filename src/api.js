@@ -4,7 +4,7 @@ import { logout } from "./utils";
 
 const apiClient = axios.create({
   baseURL: process.env.REACT_APP_API,
-  timeout: 5000,
+  timeout: 50000,
 });
 
 apiClient.interceptors.request.use(
